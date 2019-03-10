@@ -3,14 +3,11 @@
     android:id="@+id/coordinate_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="view.NewNoteActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <include layout="@layout/content_memo"/>
 
@@ -44,30 +41,19 @@
                 fab:fab_label="Locked memo"
                 fab:fab_colorNormal="@color/fabBtnB"/>
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/settingsBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_settings_white_24dp"
-                fab:menu_colorPressed="#232323"
-                fab:fab_size="mini"
-                fab:fab_label="Settings"
-                fab:fab_colorNormal="@color/fabBtnB"/>
+            <!--<com.github.clans.fab.FloatingActionButton-->
+                <!--android:id="@+id/settingsBtn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_settings_white_24dp"-->
+                <!--fab:menu_colorPressed="#232323"-->
+                <!--fab:fab_size="mini"-->
+                <!--fab:fab_label="Settings"-->
+                <!--fab:fab_colorNormal="@color/fabBtnB"/>-->
 
         </com.github.clans.fab.FloatingActionMenu>
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center">
-
-        <com.google.android.gms.ads.AdView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.google.android.gms.ads.AdView>
-
-    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
 

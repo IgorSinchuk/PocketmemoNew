@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <ImageView
             android:layout_marginTop="20dp"
@@ -21,7 +23,7 @@
             android:layout_gravity="center" />
 
         <TextView
-            android:text="Place your fingertip on the Home button to verify your identity"
+            android:text="Use finger print or enter Pin code."
             android:textSize="16dp"
             android:gravity="center"
             android:textColor="#000"

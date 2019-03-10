@@ -69,6 +69,8 @@ public class NewNoteActivity extends AppCompatActivity{
 
     boolean doubleBackToExitPressedOnce = false;
 
+    //google ad
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +79,8 @@ public class NewNoteActivity extends AppCompatActivity{
         coordinatorLayout = findViewById(R.id.coordinate_layout);
         recyclerView = findViewById(R.id.recycler_view);
         noMemo = findViewById(R.id.empty_memo_view);
+
+        //ad google
 
         db = new DatabaseHelper(this);
         memoList.addAll(db.getAllMemo());
