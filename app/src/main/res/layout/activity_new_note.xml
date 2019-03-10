@@ -8,49 +8,66 @@
     android:layout_height="match_parent"
     tools:context="view.NewNoteActivity">
 
-    <include layout="@layout/content_memo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.github.clans.fab.FloatingActionMenu
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+        <include layout="@layout/content_memo"/>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            fab:menu_colorPressed="#232323"
+            fab:menu_colorNormal="@color/fabBtnB"
+            fab:menu_labels_style="@style/fabLabel">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/newMemoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_white_24dp"
+                fab:menu_colorPressed="#232323"
+                fab:fab_size="mini"
+                fab:fab_label="New memo"
+                fab:fab_colorNormal="@color/fabBtnB"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/secretMemoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lock_outline_white_24dp"
+                fab:menu_colorPressed="#232323"
+                fab:fab_size="mini"
+                fab:fab_label="Locked memo"
+                fab:fab_colorNormal="@color/fabBtnB"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/settingsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings_white_24dp"
+                fab:menu_colorPressed="#232323"
+                fab:fab_size="mini"
+                fab:fab_label="Settings"
+                fab:fab_colorNormal="@color/fabBtnB"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        fab:menu_colorPressed="#232323"
-        fab:menu_colorNormal="@color/fabBtnB"
-        fab:menu_labels_style="@style/fabLabel">
+        android:layout_gravity="bottom|center">
 
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/newMemoBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_add_white_24dp"
-            fab:menu_colorPressed="#232323"
-            fab:fab_size="mini"
-            fab:fab_label="New memo"
-            fab:fab_colorNormal="@color/fabBtnB"/>
+        <com.google.android.gms.ads.AdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.gms.ads.AdView>
 
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/secretMemoBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_lock_outline_white_24dp"
-            fab:menu_colorPressed="#232323"
-            fab:fab_size="mini"
-            fab:fab_label="Locked memo"
-            fab:fab_colorNormal="@color/fabBtnB"/>
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/settingsBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_settings_white_24dp"
-            fab:menu_colorPressed="#232323"
-            fab:fab_size="mini"
-            fab:fab_label="Settings"
-            fab:fab_colorNormal="@color/fabBtnB"/>
-
-    </com.github.clans.fab.FloatingActionMenu>
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
 

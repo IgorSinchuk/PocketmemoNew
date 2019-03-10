@@ -1,6 +1,7 @@
 package com.nonexistenware.igor.pocketmemo.view;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -19,7 +20,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.github.clans.fab.FloatingActionButton;
 import com.nonexistenware.igor.pocketmemo.R;
 import com.nonexistenware.igor.pocketmemo.adapter.MemoAdapter;
 import com.nonexistenware.igor.pocketmemo.database.SecuredDatabaseHelper;
@@ -55,8 +55,8 @@ public class SecuredMemoActivity extends AppCompatActivity {
         db = new SecuredDatabaseHelper(this);
         memoList.addAll(db.getAllMemo());
 
-        FloatingActionButton newMemoBtn = findViewById(R.id.newMemoBtn);
-        newMemoBtn.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton newMemo = findViewById(R.id.newMemoBtn);
+        newMemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showMemoDialog(false, null, -1);
