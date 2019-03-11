@@ -42,6 +42,16 @@
                 fab:fab_colorNormal="@color/fabBtnB"/>
 
             <!--<com.github.clans.fab.FloatingActionButton-->
+                <!--android:id="@+id/exitBtn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_power_black_24dp"-->
+                <!--fab:menu_colorPressed="#232323"-->
+                <!--fab:fab_size="mini"-->
+                <!--fab:fab_label="Exit"-->
+                <!--fab:fab_colorNormal="@color/fabBtnB"/>-->
+
+            <!--<com.github.clans.fab.FloatingActionButton-->
                 <!--android:id="@+id/settingsBtn"-->
                 <!--android:layout_width="wrap_content"-->
                 <!--android:layout_height="wrap_content"-->
