@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".view.SecuredMemoActivity">
 
-    <include layout="@layout/content_memo"/>
+    <include layout="@layout/secured_content_memo"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/newMemoBtn"
