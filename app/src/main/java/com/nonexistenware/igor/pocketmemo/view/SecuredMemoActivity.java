@@ -5,7 +5,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import android.content.DialogInterface;
@@ -217,4 +216,5 @@ public class SecuredMemoActivity extends AppCompatActivity {
         }
         return false;
     }
+
 }

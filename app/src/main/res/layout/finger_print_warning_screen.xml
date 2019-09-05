@@ -23,7 +23,7 @@
             android:layout_gravity="center" />
 
         <TextView
-            android:text="Use finger to proceed."
+            android:text="Use finger print or enter Pin code."
             android:textSize="16dp"
             android:gravity="center"
             android:textColor="#000"
