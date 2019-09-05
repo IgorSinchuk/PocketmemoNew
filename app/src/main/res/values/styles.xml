@@ -16,4 +16,8 @@
         <item name="android:background">@drawable/fab_label_background</item>
     </style>
 
+    <style name="NoAnimationTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
 </resources>

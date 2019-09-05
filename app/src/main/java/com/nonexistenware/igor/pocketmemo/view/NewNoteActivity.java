@@ -6,6 +6,7 @@ import android.app.KeyguardManager;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
+import android.os.Handler;
 import android.security.keystore.KeyGenParameterSpec;
 import android.security.keystore.KeyProperties;
 import android.support.design.widget.CoordinatorLayout;
@@ -358,4 +359,19 @@ public class NewNoteActivity extends AppCompatActivity{
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Press BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+               doubleBackToExitPressedOnce = false;
+            }
+        }, 2000);
+    }
 }
