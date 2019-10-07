@@ -25,7 +25,7 @@
                 android:id="@+id/newMemoBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_add_white_24dp"
+                android:src="@drawable/ic_add_circle_outline_white_24dp"
                 fab:menu_colorPressed="#232323"
                 fab:fab_size="mini"
                 fab:fab_label="New memo"

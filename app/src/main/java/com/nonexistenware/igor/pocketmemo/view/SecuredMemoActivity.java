@@ -96,7 +96,7 @@ public class SecuredMemoActivity extends AppCompatActivity {
 
     }
 
-    private void createNote(String memo) {
+    public void createNote(String memo) {
         long id = db.insertNote(memo);
         Memo mem = db.getMemo(id);
 

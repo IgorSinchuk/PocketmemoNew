@@ -3,6 +3,7 @@ package com.nonexistenware.igor.pocketmemo.view;
 import android.Manifest;
 import android.app.Dialog;
 import android.app.KeyguardManager;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.security.keystore.KeyGenParameterSpec;
@@ -10,6 +11,7 @@ import android.security.keystore.KeyProperties;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.Toast;
 
@@ -153,4 +155,15 @@ public class WarningSecuredActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-}
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            startActivity(new Intent(WarningSecuredActivity.this, NewNoteActivity.class));
+            super.onKeyDown(keyCode, event);
+            return true;
+        }
+        return false;
+        }
+    }
+
